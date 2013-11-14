@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FasTip</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="billAmount">Bill Amount</string>
+    <string name="calculateTip">Calculate Tip</string>
+    <string name="tipAmount">Tip Amount</string>
+    <string name="totalAmount">Total Amount</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="saveSettings">Save Settings</string>
+    <string name="tipPercentage">Tip Percentage</string>
+    <string name="percentSymbol">%</string>
+    
+</resources>

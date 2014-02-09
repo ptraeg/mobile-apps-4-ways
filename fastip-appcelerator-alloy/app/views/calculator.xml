@@ -1,0 +1,39 @@
+<Alloy>
+	<Window title="Alloy FasTip" backgroundColor="#fff">
+		<!-- android menu -->
+		<Menu>
+			<MenuItem 
+				onClick = "clickedSettings" 
+				title = "Settings" 
+				icon = "Ti.Android.R.drawable.ic_menu_preferences"
+				showAsAction = "Ti.Android.SHOW_AS_ACTION_IF_ROOM" />
+		</Menu>
+
+		<!-- rightNavButton for platforms that support them -->
+		<RightNavButton platform="ios">
+			<Button id="settingsButton" onClick="clickedSettings" 
+				systemButton="Titanium.UI.iPhone.SystemButton.COMPOSE" />
+		</RightNavButton>
+
+		<TextField id="billAmtTextField" 
+			top="40" 
+			width="146" 
+			height="35"  
+			textAlign="right" 
+			hintText="Bill amount"
+			keyboardType="Ti.UI.KEYBOARD_DECIMAL_PAD"
+			returnKeyType="Ti.UI.RETURNKEY_DONE"
+			></TextField>
+		
+		<Button id='calcTipButton' onClick="clickedCalculate" title="Calculate Tip" top="100" width="122" class="primaryButton" ></Button>
+
+		<View top="170" width="Ti.UI.SIZE" height="Ti.UI.SIZE">
+			<Label left="13" width="124" top="0" textAlign="Ti.UI.TEXT_ALIGNMENT_RIGHT">Tip Amount:</Label>
+			<Label id="tipAmtLabel" left="130" top="0" width="80" textAlign="Ti.UI.TEXT_ALIGNMENT_RIGHT">$0.00</Label>
+
+			<Label left="13" width="124" top="30" textAlign="Ti.UI.TEXT_ALIGNMENT_RIGHT" class="totalAmt">Total Amount:</Label>
+			<Label id="totalAmtLabel" left="130" top="30" width="80" textAlign="Ti.UI.TEXT_ALIGNMENT_RIGHT" class="totalAmt">$0.00</Label>
+		</View>
+
+	</Window>
+</Alloy>

@@ -1,0 +1,6 @@
+<Alloy>
+    <Require id="calculator" src="calculator" platform="android"/>
+	<NavigationWindow id="index" platform="ios">
+		<Require src="calculator" id="calculator"/>
+	</NavigationWindow>
+</Alloy>

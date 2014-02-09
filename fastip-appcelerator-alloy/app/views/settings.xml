@@ -1,0 +1,28 @@
+<Alloy>
+	<Window title="Settings" backgroundColor="#fff" backButtonTitle="">
+		<!-- android menu -->
+		<Menu platform="android">
+			<MenuItem 
+				onClick="clickedDone" 
+				title="Done" 
+				icon = "Ti.Android.R.drawable.ic_menu_save"
+				showAsAction = "Ti.Android.SHOW_AS_ACTION_IF_ROOM" />
+		</Menu>
+
+		<Label top="35">Set tip percentage</Label>
+
+		<TextField id="tipPctTextField" 
+			top="72" 
+			width="60" 
+			height="35"  
+			textAlign="right" 
+			hintText="Tip %" 
+			keyboardType="Ti.UI.KEYBOARD_DECIMAL_PAD"
+			returnKeyType="Ti.UI.RETURNKEY_DONE"
+			></TextField>
+		<Label top="72" left="195">%</Label>
+		
+		<Button id='saveButton' onClick="clickedSave" title="Save Settings" top="120" width="130" class="primaryButton" ></Button>
+
+	</Window>
+</Alloy>

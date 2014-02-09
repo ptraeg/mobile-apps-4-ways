@@ -1,0 +1,36 @@
+"Window": {
+	backgroundColor:"#fff"
+}
+
+"Window[platform=android]": {
+    navBarHidden: false
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+} 
+
+"TextField": {
+	color: "#000"
+}
+
+"TextField[platform=ios]": {
+	paddingLeft:10,
+	paddingRight:10,
+	borderColor:"#000",
+	borderRadius: "10",
+	borderWidth: "1"
+}
+
+"Button": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	borderRadius: 15
+}
+
+".primaryButton": {
+	backgroundColor: '#3883B5',
+	color: '#fff'
+} 
